@@ -14,7 +14,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:3000/todos');
+      const response = await fetch('https://my-todo-2l3f.onrender.com/todos');
       const result = await response.json();
       setTodos(result);
     } catch (error) {

@@ -8,7 +8,7 @@ export default function Todo({todos}) {
           <h1>{todo.title}</h1>
           <h2>{todo.description}</h2>
           <button id={todo._id} onClick={(event)=>{
-            fetch("http://localhost:3000/todo/",{
+            fetch("https://my-todo-2l3f.onrender.com/todo",{
               method:'DELETE',
               headers:{
                 'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ export default function CreateTodo(){
                 setDescription(e.target.value);
             }}></input><br></br><br></br>
             <button style={{width: '300px', height: '30px'}} onClick={() => {
-                fetch('http://localhost:3000/todo', {
+                fetch('https://my-todo-2l3f.onrender.com/todo', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
